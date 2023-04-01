@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin sản phẩm</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/icon/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="header-top">
+                <div class="logo">
+                    <img src="./assets/img/handmade-logo.jpg" alt="handmade-logo">
+                </div>
+                <div class="search">
+                    <input class="search-in" type="text" placeholder="Tìm kiếm ...">
+                    <button type="button">
+                        <i class="search-icon ti-search"></i>
+                    </button>
+                </div>
+                <div class="header-right">
+                    <div class="shopping-cart">
+                        <i class="shopping-cart-icon ti-shopping-cart"></i>
+                        <span class="total">0</span>
+                    </div>
+                    <button class="log-in" onclick="openForm()">Đăng nhập</button>
+                    <div class="header-info">
+                        <p><i class="ti ti-location-pin"></i>Nguyễn Trãi, Hà Đông, Hà Nội</p>
+                        <p><i class="ti ti-email"></i>anhn20089@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <ul id="nav">
+                <li><a href="">Trang chủ</a></li>
+                <li>
+                    <a href="">
+                        Danh mục sản phẩm
+                    <i class="nav-down ti-angle-double-down"></i>
+                    </a>
+                    <ul class="nav-menu">
+                        <li><a href="">Quần áo</a></li>
+                        <li><a href="">Phụ kiện</a></li>
+                        <li><a href="">Trang sức</a></li>
+                        <li><a href="">Trang trí</a></li>
+                        <li><a href="">Quà tặng</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Góc chia sẻ</a></li>
+                <li><a href="">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div id="product">
+            <div class="container">
+                <div class="title-h2 top-navigation">
+                    <ul class="navigation">
+                        <li class="list-navigation">
+                           <a href="">Trang chủ</a>
+                           <i class="ti-nav ti-angle-double-right"></i> 
+                        </li>
+                        <li class="list-navigation">
+                            <a href="">Trang trí</a>
+                            <i class="ti-nav ti-angle-double-right"></i> 
+                         </li>
+                         <li class="list-navigation">
+                            <a href="">Đồng hồ xe đạp để bàn</a>
+                         </li>
+                    </ul>
+                </div>
+
+                <div class="ct-product">
+                    <img src="./assets/img/dong ho xe dap.jpg" alt="Đồng hồ xe đạp để bàn">
+                    <div class="detail-product">
+                        <h3 class="title-h3">Đồng hồ xe đạp để bàn</h3>
+                        <p class="product-code">Mã sản phẩm: 207015</p>
+                        <p class="product-status">Trạng thái: Còn hàng</p>
+                        <p class="product-price"> 240.000đ</p>
+                        <div class="quantity">
+                            <label for="quantity">Số lượng:</label>
+                            <button class="minus-btn" onclick="minusItem()"><i class=" ti ti-minus"></i></button>
+                            <input type="number" value="1" min="1" max="10" class="quantity-selector" id="amount">
+                            <button class="plus-btn " onclick="plusItem()"><i class=" ti ti-plus"></i></button>
+                        </div>
+                        <a href="" class="pro-buy">Đặt mua</a>
+                        <div class="describe">
+                            <h4>Mô tả</h4>
+                            <p>Không chỉ là một chiếc đồng hồ để bàn thông thường, mà đó còn là một đồng hồ để bàn với phong cách vintage vô cùng ấn tượng và độc đáo. Xe đạp được thiết kế theo mẫu cổ điển năm 1879 kèm theo một chiếc đồng hồ ở vị trí bánh trước tạo nên sự mới lạ và đặc biệt. Không chỉ giúp ích trong việc xem thời gian, mà bạn còn có thể dùng để trang trí cho không gian nội thất của mình trở nên thật sinh động.
+                                <br>
+                                Thông tin và kích thước của đồng hồ để bàn: 
+                                <li>✔️  Bánh trước + bánh sau: 14cm.</li>
+                                <li>✔️ Chiều dài nguyên xe: 34cm</li>
+                                <li>✔️ Chiều cao xe: 20cm.</li>
+                                <li>✔️ Màu sắc: Trắng và đen</li>
+                                <li>✔️ Chất liệu: Sắt</li>
+                                </p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="pro-title-h3"> Sản phẩm liên quan</h3>
+                <div class="ct-items">
+                    <ul class="list-items">
+                        <li class="item">
+                            <p class="item-heading">Đồng hồ vintage 3 chân tripod</p>
+                            <div class="img-item">
+                                <a href="" title="Đồng hồ vintage 3 chân tripod">
+                                    <img class="product-img" src="./assets/img/product/Đồng hồ vintage 3 chân tripod.jpg" alt="Móc khóa vải nỉ con mèo">
+                                </a>
+                            </div>
+                            <p class="cost-item">300,000 vnđ</p>
+                            <div class="button-item">
+                                <a class="detail-item" href="">Chi tiết</a>
+                                <a class="detail-item" href="">Đặt mua</a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <p class="item-heading">Đồng hồ treo tường 2 mặt cổ điển</p>
+                            <div class="img-item">
+                                <a href="" title="đồng hồ treo tường 2 mặt cổ điển">
+                                    <img class="product-img" src="./assets/img/product/đồng hồ treo tường 2 mặt cổ điển.jpg" alt="Móc khóa vải nỉ con mèo">
+                                </a>
+                            </div>
+                            <p class="cost-item">655,000 vnđ</p>
+                            <div class="button-item">
+                                <a class="detail-item" href="">Chi tiết</a>
+                                <a class="detail-item" href="">Đặt mua</a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <p class="item-heading">Móc khóa vải nỉ con mèo</p>
+                            <div class="img-item">
+                                <a href="" title="Móc khóa vải nỉ con mèo">
+                                    <img class="product-img" src="./assets/img/sp nổi bật/sp1.jpg" alt="Móc khóa vải nỉ con mèo">
+                                </a>
+                            </div>
+                            <p class="cost-item">45,000 vnđ</p>
+                            <div class="button-item">
+                                <a class="detail-item" href="">Chi tiết</a>
+                                <a class="detail-item" href="">Đặt mua</a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <p class="item-heading">Died cut - Sticker trang trí handmade</p>
+                            <div class="img-item">
+                                <a href="" title="Died cut - Sticker trang trí handmade">
+                                    <img class="product-img" src="./assets/img/product/Died cut - Sticker trang trí handmade.jpg" alt="Váy len màu đỏ">
+                                </a>
+                            </div>
+                            <p class="cost-item">45,000 vnđ</p>
+                            <div class="button-item">
+                                <a class="detail-item" href="">Chi tiết</a>
+                                <a class="detail-item" href="">Đặt mua</a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <p class="item-heading">Thiệp chúc mừng</p>
+                            <div class="img-item">
+                                <a href="" title="Thiệt chúc mừng">
+                                    <img class="product-img" src="./assets/img/sp nổi bật/sp4.jpg" alt="Thiệt chúc mừng">
+                                </a>
+                            </div>
+                            <p class="cost-item">45,000 vnđ</p>
+                            <div class="button-item">
+                                <a class="detail-item" href="">Chi tiết</a>
+                                <a class="detail-item" href="">Đặt mua</a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <p class="item-heading">Hộp nhạc hình thú Animal đáng yêu</p>
+                            <div class="img-item">
+                                <a href="" title="Hộp nhạc hình thú Animal đáng yêu">
+                                    <img class="product-img" src="./assets/img/product/Hộp nhạc hình thú Animal đáng yêu.jpg" alt="Đồng hồ xe đạp để bàn">
+                                </a>
+                            </div>
+                            <p class="cost-item">240,000 vnđ</p>
+                            <div class="button-item">
+                                <a class="detail-item" href="">Chi tiết</a>
+                                <a class="detail-item" href="">Đặt mua</a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <p class="item-heading">Combo quà tặng hoa</p>
+                            <div class="img-item">
+                                <a href="" title="Combo quà tặng hoa Tulip bó và thiệp">
+                                    <img class="product-img" src="./assets/img/sp nổi bật/sp6.jpg" alt="Combo quà tặng hoa Tulip bó và thiệp">
+                                </a>
+                            </div>
+                            <p class="cost-item">290,000 vnđ</p>
+                            <div class="button-item">
+                                <a class="detail-item" href="">Chi tiết</a>
+                                <a class="detail-item" href="">Đặt mua</a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <p class="item-heading">Móc khóa gỗ đẹp</p>
+                            <div class="img-item">
+                                <a href="" title="Móc khóa gỗ đẹp">
+                                    <img class="product-img" src="./assets/img/sp nổi bật/sp8.jpg" alt="Móc khóa gỗ đẹp">
+                                </a>
+                            </div>
+                            <p class="cost-item">40,000 vnđ</p>
+                            <div class="button-item">
+                                <a class="detail-item" href="">Chi tiết</a>
+                                <a class="detail-item" href="">Đặt mua</a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <p class="item-heading">Vòng tay chuỗi hạt sứ</p>
+                            <div class="img-item">
+                                <a href="" title="Vòng tay chuỗi hạt sứ">
+                                    <img class="product-img" src="./assets/img/sp nổi bật/sp9.jpg" alt="Vòng tay chuỗi hạt sứ">
+                                </a>
+                            </div>
+                            <p class="cost-item">35,000 vnđ</p>
+                            <div class="button-item">
+                                <a class="detail-item" href="">Chi tiết</a>
+                                <a class="detail-item" href="">Đặt mua</a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <p class="item-heading">Kẹp tóc dễ thương</p>
+                            <div class="img-item">
+                                <a href="" title="Kẹp tóc dễ thương">
+                                    <img class="product-img" src="./assets/img/sp nổi bật/sp10.jpg" alt="Kẹp tóc dễ thương">
+                                </a>
+                            </div>
+                            <p class="cost-item">25,000 vnđ</p>
+                            <div class="button-item">
+                                <a class="detail-item" href="">Chi tiết</a>
+                                <a class="detail-item" href="">Đặt mua</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list-page">
+                        <li class="page page-number">1</li>
+                        <li class="page page-number">2</li>
+                        <li class="next-page page"><i class="ti-angle-double-right"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-reviews">
+            <h3 class="reviews-title">Đánh giá</h3>
+            <form method="post" id="commentform" class="comment-form" novalidate="">
+                <p class="comment-form-comment">
+                    <label for="comment">Nhận xét của bạn
+                        <span class="required">*</span>
+                    </label>
+                    <textarea id="comment" name="comment" cols="45" rows="8" required=""></textarea>
+                </p>
+                <p class="comment-form-author">
+                    <label for="author">Tên
+                        <span class="required">*</span>
+                    </label> 
+                    <input id="author" name="author" type="text" required>
+                </p>
+                <p class="comment-form-email">
+                    <label for="email">Email
+                        <span class="required">*</span>
+                    </label> 
+                    <input id="email" name="email" type="email" required>
+                </p>
+                <p class="comment-form-cookies">
+                    <input id="wf-cookies" name="wf-cookies" type="checkbox" value="yes">
+                    <label for="wf-cookies">Lưu tên của tôi, email, và trang web trong trình duyệt này cho lần bình luận kế tiếp của tôi.</label>
+                </p>
+                <p class="form-submit">
+                    <input name="submit" type="submit" id="submit" class="submit" value="Gửi đi" onclick="checkInput()"> 
+                </p>			
+            </form>
+        </div>
+
+        <div id="footer">
+            <div class="footer-side logo">
+                <a href="#">
+                    <img src="./assets/img/handmade-logo.jpg" alt="handmade-logo">
+                </a>
+            </div>
+            <div class="footer-side">
+                <h3 class="heading">Thông tin</h3>
+                <ul class="menu-footer-side">
+                    <li><a href="">Về chúng tôi</a></li>
+                    <li><a href="">Thông tin giao hàng</a></li>
+                    <li><a href="">Chính sách bảo mật</a></li>
+                    <li><a href="">Điều khoản và điều kiện</a></li>
+                    <li><a href="">Liên hệ chúng tôi</a></li>
+                </ul>
+            </div>
+            <div class="footer-side">
+                <h3 class="heading">Tiện ích bổ sung</h3>
+                <ul class="menu-footer-side">
+                    <li><a href="">Nhãn hiệu</a></li>
+                    <li><a href="">Phiếu quà tặng</a></li>
+                    <li><a href="">Chi nhánh</a></li>
+                    <li><a href="">Đặc biệt</a></li>
+                    <li><a href="">Sơ đồ trang web</a></li>
+                </ul>
+            </div>
+            <div class="footer-side">
+                <h3 class="heading">Thông tin liên hệ</h3>
+                <ul class="menu-footer-side">
+                    <li>
+                        <i class="ti ti-location-pin"> Nguyễn Trãi, Hà Đông, Hà Nội</i>
+                    </li>
+                    <li>
+                        <i class="ti ti-email"> anhn20089@gmail.com</i>
+                    </li>
+                    <li>
+                        <i class="ti ti-mobile"> 0982719307</i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- Modal layout -->
+     <div class="modal" id="myForm">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__body">
+            <div class="modal__inner">
+
+                <!-- Authen form-->
+                <div class="auth-form">
+                    <h3 class="auth-form__heding">Đăng nhập</h3>
+                    <div class="auth-form__form">
+                        <div class="auth-form__input">
+                            <p>Nhập tên người dùng hoặc email:</p>
+                            <input type="text" placeholder="Tên đăng nhập" name="loginKey" required>
+                        </div>
+                        <div class="auth-form__input">
+                            <p>Nhập mật khẩu:</p>
+                            <input type="password" placeholder="Mật khẩu" name="password" required>
+                        </div>
+                        <div class="btn-login">
+                            <button>Đăng nhập</button>
+                        </div>
+                        <div class="btn-close">
+                            <button onclick="closeForm()">Đóng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
