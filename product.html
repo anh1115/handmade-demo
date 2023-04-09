@@ -14,8 +14,15 @@
     <div id="main">
         <div id="header">
             <div class="header-top">
+                <marquee direction="right"> Chào mừng bạn đến với Đồ Handmade Đẹp! </marquee>
+                <div class="topbar">
+                    <a href="tel:0982719307">Hotline đặt hàng: 0982719307</a>
+                    <button class="log-in" onclick="openForm()">Đăng nhập</button>
+                </div>
+            </div>
+            <div class="header-bottom">
                 <div class="logo">
-                    <img src="./assets/img/handmade-logo.jpg" alt="handmade-logo">
+                    <img src="./assets/img/logo1.jpg" alt="handmade-logo">
                 </div>
                 <div class="search">
                     <input class="search-in" type="text" placeholder="Tìm kiếm ...">
@@ -23,22 +30,24 @@
                         <i class="search-icon ti-search"></i>
                     </button>
                 </div>
-                <div class="header-right">
-                    <div class="shopping-cart">
+                <div class="shopping-cart">
+                    <a href="cart.html">
                         <i class="shopping-cart-icon ti-shopping-cart"></i>
-                        <span class="total">0</span>
-                    </div>
-                    <button class="log-in" onclick="openForm()">Đăng nhập</button>
-                    <div class="header-info">
-                        <p><i class="ti ti-location-pin"></i>Nguyễn Trãi, Hà Đông, Hà Nội</p>
-                        <p><i class="ti ti-email"></i>anhn20089@gmail.com</p>
-                    </div>
+                        <div class="right-ct">
+                            <span class="cart-ct">Giỏ hàng</span> 
+                            <div class="product-ct">
+                                Sản phẩm (
+                                <span class="total">0</span>
+                                )
+                              </div>
+                        </div>
+                    </a>   
                 </div>
             </div>
             <ul id="nav">
-                <li><a href="">Trang chủ</a></li>
+                <li><a href="home.html">Trang chủ</a></li>
                 <li>
-                    <a href="">
+                    <a href="category.html">
                         Danh mục sản phẩm
                     <i class="nav-down ti-angle-double-down"></i>
                     </a>
@@ -46,7 +55,7 @@
                         <li><a href="">Quần áo</a></li>
                         <li><a href="">Phụ kiện</a></li>
                         <li><a href="">Trang sức</a></li>
-                        <li><a href="">Trang trí</a></li>
+                        <li><a href="product.html">Trang trí</a></li>
                         <li><a href="">Quà tặng</a></li>
                     </ul>
                 </li>
@@ -54,6 +63,7 @@
                 <li><a href="">Liên hệ</a></li>
             </ul>
         </div>
+        <button id="scroll-to-top-button"><i class="ti-arrow-up"></i></button>
         <div id="product">
             <div class="container">
                 <div class="title-h2 top-navigation">
@@ -77,7 +87,6 @@
                     <div class="detail-product">
                         <h3 class="title-h3">Đồng hồ xe đạp để bàn</h3>
                         <p class="product-code">Mã sản phẩm: 207015</p>
-                        <p class="product-status">Trạng thái: Còn hàng</p>
                         <p class="product-price"> 240.000đ</p>
                         <div class="quantity">
                             <label for="quantity">Số lượng:</label>
@@ -85,7 +94,7 @@
                             <input type="number" value="1" min="1" max="10" class="quantity-selector" id="amount">
                             <button class="plus-btn " onclick="plusItem()"><i class=" ti ti-plus"></i></button>
                         </div>
-                        <a href="" class="pro-buy">Đặt mua</a>
+                        <a href="./pay.html" class="pro-buy">Đặt mua</a>
                         <div class="describe">
                             <h4>Mô tả</h4>
                             <p>Không chỉ là một chiếc đồng hồ để bàn thông thường, mà đó còn là một đồng hồ để bàn với phong cách vintage vô cùng ấn tượng và độc đáo. Xe đạp được thiết kế theo mẫu cổ điển năm 1879 kèm theo một chiếc đồng hồ ở vị trí bánh trước tạo nên sự mới lạ và đặc biệt. Không chỉ giúp ích trong việc xem thời gian, mà bạn còn có thể dùng để trang trí cho không gian nội thất của mình trở nên thật sinh động.
@@ -305,13 +314,13 @@
                 <h3 class="heading">Thông tin liên hệ</h3>
                 <ul class="menu-footer-side">
                     <li>
-                        <i class="ti ti-location-pin"> Nguyễn Trãi, Hà Đông, Hà Nội</i>
+                        <a href="https://goo.gl/maps/pLtCFvjTwmrD8TEZ9"><i class="ti ti-location-pin"> Nguyễn Trãi, Hà Đông, Hà Nội</i></a>
                     </li>
                     <li>
-                        <i class="ti ti-email"> anhn20089@gmail.com</i>
+                        <a href="mailto:anhn20089@gmail.com"><i class="ti ti-email"> anhn20089@gmail.com</i></a>
                     </li>
                     <li>
-                        <i class="ti ti-mobile"> 0982719307</i>
+                        <a href="tel:0982719307"><i class="ti ti-mobile"> 0982719307</i></a>
                     </li>
                 </ul>
             </div>

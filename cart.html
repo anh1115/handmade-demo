@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/icon/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div id="main">
+        <div id="header">
+            <div class="header-top">
+                <marquee direction="right"> Chào mừng bạn đến với Đồ Handmade Đẹp! </marquee>
+                <div class="topbar">
+                    <a href="tel:0982719307">Hotline đặt hàng: 0982719307</a>
+                    <button class="log-in" onclick="openForm()">Đăng nhập</button>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="logo">
+                    <img src="./assets/img/logo1.jpg" alt="handmade-logo">
+                </div>
+                <div class="search">
+                    <input class="search-in" type="text" placeholder="Tìm kiếm ...">
+                    <button type="button">
+                        <i class="search-icon ti-search"></i>
+                    </button>
+                </div>
+                <div class="shopping-cart">
+                    <a href="cart.html">
+                        <i class="shopping-cart-icon ti-shopping-cart"></i>
+                        <div class="right-ct">
+                            <span class="cart-ct">Giỏ hàng</span> 
+                            <div class="product-ct">
+                                Sản phẩm (
+                                <span class="total">0</span>
+                                )
+                              </div>
+                        </div>
+                    </a>   
+                </div>
+            </div>
+            <ul id="nav">
+                <li><a href="home.html">Trang chủ</a></li>
+                <li>
+                    <a href="category.html">
+                        Danh mục sản phẩm
+                    <i class="nav-down ti-angle-double-down"></i>
+                    </a>
+                    <ul class="nav-menu">
+                        <li><a href="">Quần áo</a></li>
+                        <li><a href="">Phụ kiện</a></li>
+                        <li><a href="">Trang sức</a></li>
+                        <li><a href="product.html">Trang trí</a></li>
+                        <li><a href="">Quà tặng</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Góc chia sẻ</a></li>
+                <li><a href="">Liên hệ</a></li>
+            </ul>
+        </div>
+        <button id="scroll-to-top-button"><i class="ti-arrow-up"></i></button>
+        <div id="cart">
+            <h3 class="title-h3 cart-title"> Giỏ hàng [2]</h3>
+            <div class="cart-container">
+                <div class="heading">
+                    <h4 class="column c1">Hình</h4>
+                    <h4 class="column c2">Sản phẩm</h4>
+                    <h4 class="column c3">Số lượng</h4>
+                    <h4 class="column c4">Đơn giá</h4>
+                    <h4 class="column c5">Thành tiền</h4>
+                    <h4 class="column c6">Xóa</h4>
+                </div>
+                <div class="row">
+                    <div class="column c1">
+                        <img src="./assets/img/dong ho xe dap.jpg" alt="Đồng hồ xe đạp để bàn">
+                    </div>
+                    <div class="column c2">Đồng hồ xe đạp để bàn</div>
+                    <div class="column c3">240.000đ</div>
+                    <div class="column c4">
+                        <button class="minus-btn" onclick="minusItem()"><i class=" ti ti-minus"></i></button>
+                        <input type="number" value="1" min="1" max="10" class="quantity-selector" id="amount">
+                        <button class="plus-btn " onclick="plusItem()"><i class=" ti ti-plus"></i></button>
+                    </div>
+                    <div class="column c5">240.000đ</div>
+                    <div class="column c6">
+                        <i class="ti ti-trash"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column c1">
+                        <img src="./assets/img/product/Hộp nhạc hình thú Animal đáng yêu.jpg" alt="Hộp nhạc hình thú Animal đáng yêu">
+                    </div>
+                    <div class="column c2">Hộp nhạc hình thú Animal đáng yêu</div>
+                    <div class="column c3">240.000đ</div>
+                    <div class="column c4">
+                        <button class="minus-btn" onclick="minusItem()"><i class=" ti ti-minus"></i></button>
+                        <input type="number" value="1" min="1" max="10" class="quantity-selector" id="amount">
+                        <button class="plus-btn " onclick="plusItem()"><i class=" ti ti-plus"></i></button>
+                    </div>
+                    <div class="column c5">240.000đ</div>
+                    <div class="column c6">
+                        <i class="ti ti-trash"></i>
+                    </div>
+                </div>
+                <div class="total">
+                    <h4 class="total-h">Tổng cộng</h4>
+                    <span class="total-money">480.000đ</span>
+                </div>
+                <div class="cart-btn">
+                    <button  title="Đặt hàng" type="button" onclick="window.location.href='pay.html'">Tiến hành thanh toán</button>
+                    <button  title="Chọn tiếp" type="button" onclick="window.location.href='home.html'">Tiếp tục chọn hàng</button>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footer-side logo">
+                <a href="home.html">
+                    <img src="./assets/img/handmade-logo.jpg" alt="handmade-logo">
+                </a>
+            </div>
+            <div class="footer-side">
+                <h3 class="heading">Thông tin</h3>
+                <ul class="menu-footer-side">
+                    <li><a href="">Về chúng tôi</a></li>
+                    <li><a href="">Thông tin giao hàng</a></li>
+                    <li><a href="">Chính sách bảo mật</a></li>
+                    <li><a href="">Điều khoản và điều kiện</a></li>
+                    <li><a href="">Liên hệ chúng tôi</a></li>
+                </ul>
+            </div>
+            <div class="footer-side">
+                <h3 class="heading">Tiện ích bổ sung</h3>
+                <ul class="menu-footer-side">
+                    <li><a href="">Nhãn hiệu</a></li>
+                    <li><a href="">Phiếu quà tặng</a></li>
+                    <li><a href="">Chi nhánh</a></li>
+                    <li><a href="">Đặc biệt</a></li>
+                    <li><a href="">Sơ đồ trang web</a></li>
+                </ul>
+            </div>
+            <div class="footer-side">
+                <h3 class="heading">Thông tin liên hệ</h3>
+                <ul class="menu-footer-side">
+                    <li>
+                        <a href="https://goo.gl/maps/pLtCFvjTwmrD8TEZ9"><i class="ti ti-location-pin"> Nguyễn Trãi, Hà Đông, Hà Nội</i></a>
+                    </li>
+                    <li>
+                        <a href="mailto:anhn20089@gmail.com"><i class="ti ti-email"> anhn20089@gmail.com</i></a>
+                    </li>
+                    <li>
+                        <a href="tel:0982719307"><i class="ti ti-mobile"> 0982719307</i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal layout -->
+    <div class="modal" id="myForm">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__body">
+            <div class="modal__inner">
+
+                <!-- Authen form-->
+                <div class="auth-form">
+                    <h3 class="auth-form__heding">Đăng nhập</h3>
+                    <div class="auth-form__form">
+                        <div class="auth-form__input">
+                            <p>Nhập tên người dùng hoặc email:</p>
+                            <input type="text" placeholder="Tên đăng nhập" name="loginKey" >
+                        </div>
+                        <div class="auth-form__input">
+                            <p>Nhập mật khẩu:</p>
+                            <input type="password" placeholder="Mật khẩu" name="password" >
+                        </div>
+                        <div class="btn-login">
+                            <button>Đăng nhập</button>
+                        </div>
+                        <div class="btn-close">
+                            <button onclick="closeForm()">Đóng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

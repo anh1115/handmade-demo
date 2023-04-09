@@ -54,22 +54,42 @@ function plusItem() {
 // checkinput tab-reviews
 
 function checkInput() {
-    var authorInput = document.getElementById("author").value.trim();
-    var emailInput = document.getElementById("email").value.trim();
-    var commentInput = document.getElementById("comment").value.trim();
+  var authorInput = document.getElementById("author").value.trim();
+  var emailInput = document.getElementById("email").value.trim();
+  var commentInput = document.getElementById("comment").value.trim();
   
-    if (authorInput === "" || emailInput === "" || commentInput === "") {
-      alert("Vui lòng nhập đầy đủ thông tin");
-      return false;
-    }
+  if (authorInput === "" || emailInput === "" || commentInput === "") {
+    alert("Vui lòng nhập đầy đủ thông tin");
+    return false;
+  }
   
-    if (emailInput.indexOf("@") === -1) {
-      alert("Email không hợp lệ");
-      return false;
-    }
-    alert("Gửi thành công!");
-    return true;
+  if (emailInput.indexOf("@") === -1) {
+    alert("Email không hợp lệ");
+    return false;
+  }
+  alert("Gửi thành công!");
+  return true;
     
   }
   
+ 
+  // On Top
+  const scrollToTopButton = document.getElementById('scroll-to-top-button');
+
+  window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollToTopButton.style.display = "block";
+      } else {
+          scrollToTopButton.style.display = "none";
+      }
+  };
   
+  scrollToTopButton.onclick = function() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  };  
+
+
+// Xóa sản phẩm trong giỏ hàng
+
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/icon/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="payment">
+        <h2>Thông tin thanh toán</h2>
+        <div id="cart">
+            <div class="cart-container">
+                <div class="heading">
+                    <h4 class="column c1">Hình</h4>
+                    <h4 class="column c2">Sản phẩm</h4>
+                    <h4 class="column c3">Số lượng</h4>
+                    <h4 class="column c4">Đơn giá</h4>
+                    <h4 class="column c5">Thành tiền</h4>
+                    <h4 class="column c6">Xóa</h4>
+                </div>
+                <div class="row">
+                    <div class="column c1">
+                        <img src="./assets/img/dong ho xe dap.jpg" alt="Đồng hồ xe đạp để bàn">
+                    </div>
+                    <div class="column c2">Đồng hồ xe đạp để bàn</div>
+                    <div class="column c3">240.000đ</div>
+                    <div class="column c4">
+                        <button class="minus-btn" onclick="minusItem()"><i class=" ti ti-minus"></i></button>
+                        <input type="number" value="1" min="1" max="10" class="quantity-selector" id="amount">
+                        <button class="plus-btn " onclick="plusItem()"><i class=" ti ti-plus"></i></button>
+                    </div>
+                    <div class="column c5">240.000đ</div>
+                    <div class="column c6">
+                        <i class="ti ti-trash"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column c1">
+                        <img src="./assets/img/product/Hộp nhạc hình thú Animal đáng yêu.jpg" alt="Hộp nhạc hình thú Animal đáng yêu">
+                    </div>
+                    <div class="column c2">Hộp nhạc hình thú Animal đáng yêu</div>
+                    <div class="column c3">240.000đ</div>
+                    <div class="column c4">
+                        <button class="minus-btn" onclick="minusItem()"><i class=" ti ti-minus"></i></button>
+                        <input type="number" value="1" min="1" max="10" class="quantity-selector" id="amount">
+                        <button class="plus-btn " onclick="plusItem()"><i class=" ti ti-plus"></i></button>
+                    </div>
+                    <div class="column c5">240.000đ</div>
+                    <div class="column c6">
+                        <i class="ti ti-trash"></i>
+                    </div>
+                </div>
+                <div class="total">
+                    <h4 class="total-h">Tổng cộng</h4>
+                    <span class="total-money">480.000đ</span>
+                </div>
+            </div>
+        </div>
+
+
+        <form id="form-pay">
+            <h3>Thông tin nhận hàng</h3>
+            <div>
+                <label for="name">Tên:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Số điện thoại:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </div>
+            <div>
+                <label for="address">Địa chỉ:</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            <p class="comment-form-cookies">
+                <input id="wf-cookies" name="wf-cookies" type="checkbox" value="yes">
+                <label for="wf-cookies">Kiểm tra thông tin thanh toán và các sản phẩm chính xác</label>
+            </p>
+            <div>
+                <button type="submit">Đặt hàng</button>
+            </div>
+        </form>
+    </div>
+    <div id="footer">
+        <div class="footer-side logo">
+            <a href="home.html">
+                <img src="./assets/img/handmade-logo.jpg" alt="handmade-logo">
+            </a>
+        </div>
+        <div class="footer-side">
+            <h3 class="heading">Thông tin</h3>
+            <ul class="menu-footer-side">
+                <li><a href="">Về chúng tôi</a></li>
+                <li><a href="">Thông tin giao hàng</a></li>
+                <li><a href="">Chính sách bảo mật</a></li>
+                <li><a href="">Điều khoản và điều kiện</a></li>
+                <li><a href="">Liên hệ chúng tôi</a></li>
+            </ul>
+        </div>
+        <div class="footer-side">
+            <h3 class="heading">Tiện ích bổ sung</h3>
+            <ul class="menu-footer-side">
+                <li><a href="">Nhãn hiệu</a></li>
+                <li><a href="">Phiếu quà tặng</a></li>
+                <li><a href="">Chi nhánh</a></li>
+                <li><a href="">Đặc biệt</a></li>
+                <li><a href="">Sơ đồ trang web</a></li>
+            </ul>
+        </div>
+        <div class="footer-side">
+            <h3 class="heading">Thông tin liên hệ</h3>
+            <ul class="menu-footer-side">
+                <li>
+                    <a href="https://goo.gl/maps/pLtCFvjTwmrD8TEZ9"><i class="ti ti-location-pin"> Nguyễn Trãi, Hà Đông, Hà Nội</i></a>
+                </li>
+                <li>
+                    <a href="mailto:anhn20089@gmail.com"><i class="ti ti-email"> anhn20089@gmail.com</i></a>
+                </li>
+                <li>
+                    <a href="tel:0982719307"><i class="ti ti-mobile"> 0982719307</i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

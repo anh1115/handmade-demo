@@ -15,8 +15,15 @@
         <!--  Begin Header -->
         <div id="header">
             <div class="header-top">
+                <marquee direction="right"> Chào mừng bạn đến với Đồ Handmade Đẹp! </marquee>
+                <div class="topbar">
+                    <a href="tel:0982719307">Hotline đặt hàng: 0982719307</a>
+                    <button class="log-in" onclick="openForm()">Đăng nhập</button>
+                </div>
+            </div>
+            <div class="header-bottom">
                 <div class="logo">
-                    <img src="./assets/img/handmade-logo.jpg" alt="handmade-logo">
+                    <img src="./assets/img/logo1.jpg" alt="handmade-logo">
                 </div>
                 <div class="search">
                     <input class="search-in" type="text" placeholder="Tìm kiếm ...">
@@ -24,22 +31,24 @@
                         <i class="search-icon ti-search"></i>
                     </button>
                 </div>
-                <div class="header-right">
-                    <div class="shopping-cart">
+                <div class="shopping-cart">
+                    <a href="cart.html">
                         <i class="shopping-cart-icon ti-shopping-cart"></i>
-                        <span class="total">0</span>
-                    </div>
-                    <button class="log-in" onclick="openForm()">Đăng nhập</button>
-                    <div class="header-info">
-                        <p><i class="ti ti-location-pin"></i>Nguyễn Trãi, Hà Đông, Hà Nội</p>
-                        <p><i class="ti ti-email"></i>anhn20089@gmail.com</p>
-                    </div>
+                        <div class="right-ct">
+                            <span class="cart-ct">Giỏ hàng</span> 
+                            <div class="product-ct">
+                                Sản phẩm (
+                                <span class="total">0</span>
+                                )
+                              </div>
+                        </div>
+                    </a>   
                 </div>
             </div>
             <ul id="nav">
-                <li><a href="">Trang chủ</a></li>
+                <li><a href="#">Trang chủ</a></li>
                 <li>
-                    <a href="">
+                    <a href="category.html">
                         Danh mục sản phẩm
                     <i class="nav-down ti-angle-double-down"></i>
                     </a>
@@ -47,7 +56,7 @@
                         <li><a href="">Quần áo</a></li>
                         <li><a href="">Phụ kiện</a></li>
                         <li><a href="">Trang sức</a></li>
-                        <li><a href="">Trang trí</a></li>
+                        <li><a href="product.html">Trang trí</a></li>
                         <li><a href="">Quà tặng</a></li>
                     </ul>
                 </li>
@@ -55,6 +64,7 @@
                 <li><a href="">Liên hệ</a></li>
             </ul>
         </div>
+        <button id="scroll-to-top-button"><i class="ti-arrow-up"></i></button>
         <!-- End Header -->
         <div id="slider">
             <div class="slideshow-container">
@@ -144,13 +154,13 @@
                         <li class="item">
                             <p class="item-heading">Đồng hồ xe đạp để bàn</p>
                             <div class="img-item">
-                                <a href="" title="Đồng hồ xe đạp để bàn">
+                                <a href="product.html" title="Đồng hồ xe đạp để bàn">
                                     <img class="content-img" src="./assets/img/sp nổi bật/sp5.jpg" alt="Đồng hồ xe đạp để bàn">
                                 </a>
                             </div>
                             <p class="cost-item">240,000 vnđ</p>
                             <div class="button-item">
-                                <a class="detail-item" href="">Chi tiết</a>
+                                <a class="detail-item" href="product.html">Chi tiết</a>
                                 <a class="detail-item" href="">Đặt mua</a>
                             </div>
                         </li>
@@ -427,13 +437,13 @@
                 <h3 class="heading">Thông tin liên hệ</h3>
                 <ul class="menu-footer-side">
                     <li>
-                        <i class="ti ti-location-pin"> Nguyễn Trãi, Hà Đông, Hà Nội</i>
+                        <a href="https://goo.gl/maps/pLtCFvjTwmrD8TEZ9"><i class="ti ti-location-pin"> Nguyễn Trãi, Hà Đông, Hà Nội</i></a>
                     </li>
                     <li>
-                        <i class="ti ti-email"> anhn20089@gmail.com</i>
+                        <a href="mailto:anhn20089@gmail.com"><i class="ti ti-email"> anhn20089@gmail.com</i></a>
                     </li>
                     <li>
-                        <i class="ti ti-mobile"> 0982719307</i>
+                        <a href="tel:0982719307"><i class="ti ti-mobile"> 0982719307</i></a>
                     </li>
                 </ul>
             </div>
