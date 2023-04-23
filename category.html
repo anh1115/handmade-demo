@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./assets/js/slider.js">
     <link rel="stylesheet" href="./assets/icon/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>
 </head>
 <body>
     <div id="main">
@@ -101,16 +103,16 @@
                 <div class="aside-category">
                     <h3 class="title-aside">Danh mục</h3>
                     <ul class="aside-content">
-                        <li class="aside-item">Quần áo</li>
-                        <li class="aside-item">Phụ kiện</li>
-                        <li class="aside-item">Trang sức</li>
-                        <li class="aside-item">Trang trí</li>
-                        <li class="aside-item">Phụ kiện</li>
+                        <li class="aside-item" data-category="Quần áo">Quần áo</li>
+                        <li class="aside-item" data-category="Phụ kiện">Phụ kiện</li>
+                        <li class="aside-item" data-category="Trang sức">Trang sức</li>
+                        <li class="aside-item" data-category="Trang trí">Trang trí</li>
+                        <li class="aside-item" data-category="Quà tặng">Quà tặng</li>
                     </ul>
                 </div>
                 <div class="ct-items">
                     <ul class="list-items">
-                        <li class="item">
+                        <li class="item" data-category="Phụ kiện">
                             <p class="item-heading">Móc khóa vải nỉ con mèo</p>
                             <div class="img-item">
                                 <a href="" title="Móc khóa vải nỉ con mèo">
@@ -123,7 +125,7 @@
                                 <a class="detail-item" href="">Đặt mua</a>
                             </div>
                         </li>
-                        <li class="item">
+                        <li class="item" data-category="Quần áo">
                             <p class="item-heading">Váy len màu đỏ</p>
                             <div class="img-item">
                                 <a href="" title="Váy len màu đỏ">
@@ -136,7 +138,7 @@
                                 <a class="detail-item" href="">Đặt mua</a>
                             </div>
                         </li>
-                        <li class="item">
+                        <li class="item" data-category="Quà tặng">
                             <p class="item-heading">Thiệp chúc mừng</p>
                             <div class="img-item">
                                 <a href="" title="Thiệt chúc mừng">
@@ -149,7 +151,7 @@
                                 <a class="detail-item" href="">Đặt mua</a>
                             </div>
                         </li>
-                        <li class="item">
+                        <li class="item" data-category="Trang trí">
                             <p class="item-heading">Đồng hồ xe đạp để bàn</p>
                             <div class="img-item">
                                 <a href="product.html" title="Đồng hồ xe đạp để bàn">
@@ -162,7 +164,7 @@
                                 <a class="detail-item" href="">Đặt mua</a>
                             </div>
                         </li>
-                        <li class="item">
+                        <li class="item" data-category="Quà tặng">
                             <p class="item-heading">Combo quà tặng hoa</p>
                             <div class="img-item">
                                 <a href="" title="Combo quà tặng hoa Tulip bó và thiệp">
@@ -175,7 +177,7 @@
                                 <a class="detail-item" href="">Đặt mua</a>
                             </div>
                         </li>
-                        <li class="item">
+                        <li class="item" data-category="Phụ kiện">
                             <p class="item-heading">Móc khóa gỗ đẹp</p>
                             <div class="img-item">
                                 <a href="" title="Móc khóa gỗ đẹp">
@@ -188,7 +190,7 @@
                                 <a class="detail-item" href="">Đặt mua</a>
                             </div>
                         </li>
-                        <li class="item">
+                        <li class="item" data-category="Trang sức">
                             <p class="item-heading">Vòng tay chuỗi hạt sứ</p>
                             <div class="img-item">
                                 <a href="" title="Vòng tay chuỗi hạt sứ">
@@ -201,7 +203,7 @@
                                 <a class="detail-item" href="">Đặt mua</a>
                             </div>
                         </li>
-                        <li class="item">
+                        <li class="item" data-category="Trang sức">
                             <p class="item-heading">Kẹp tóc dễ thương</p>
                             <div class="img-item">
                                 <a href="" title="Kẹp tóc dễ thương">
@@ -216,9 +218,10 @@
                         </li>
                     </ul>
                     <ul class="list-page">
-                        <li class="page page-number">1</li>
-                        <li class="page page-number">2</li>
                         <li class="next-page page"><i class="ti-angle-double-right"></i></li>
+                        <li class="page page-number">2</li>
+                        <li class="page page-number">1</li>
+                        
                     </ul>
                 </div>
             </div>
